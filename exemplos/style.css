@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+/* ----- A ----- */
+
+a {
+   text-decoration: none;
+   color: cornflowerblue;
+}
+
+/* Hover = Quando o usuário passar o mouse por cima da tag. */
+
+a:hover {
+    color: grey;
+}
+
+/* Active: Quando o usuário clicar na tag. */
+
+a:active {
+    color: red;
+}
+
+/* Focus: Quando o usário foca na tag. Utilizando a tecla Tab */
+
+a:focus {
+    background-color: aqua;
+}
+
+/* Before: cria um conteúdo ANTES da tag */
+
+a:before {
+    content: " » ";
+    color: darkorange;
+}
+
+/* After: cria um conteúdo DEPOIS da tag */
+
+a:after {
+    content: " « ";
+    color: darkorange;
+}
+
+/* ----- P ----- */
+
+/* Estiliza a 1° palavra do parágrafo */
+
+.p1::first-letter {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: grey;
+}
+
+/* Estiliza a 1° Linha do parágrafo */
+
+.p2::first-line {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: grey;
+}
+
+/* Estilizando a 1° palavra do 3° parágrafo */
+
+.p3::first-letter {
+    color: white;
+    background-color: black;
+    border-radius: 2px;
+    box-shadow: 3px 3px 0 rgb(176, 177, 175);
+    font-size: 250%;
+    padding: 6px 3px;
+    margin-right: 6px;
+    float: left;
+}
+
+/* Selection: Quando o parágrafo é selecionado ele muda o background-color --- as únicas propriedas que podem ser alternadas nesse seletor são o COLOR e o BACKGROUND-COLOR */
+
+.p4::selection {
+    color: grey;
+    background-color: aqua;
+}
